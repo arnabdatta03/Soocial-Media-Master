@@ -1,7 +1,7 @@
 # Social Media Master 📸
 Welcome to Social Media Master, a project developed by the DELTA Team to simplify the process of creating engaging, multilingual captions and hashtags for your social media posts. This tool also suggests relevant songs to enhance your posts.
 
-#Features 🔥
+# Features 🔥
 Upload images to generate captions, hashtags, and song suggestions.
 Supports English, Bengali, and Hindi languages.
 Leverages Google Generative AI for content generation.
