@@ -69,5 +69,5 @@ Contributions are welcome! If you want to contribute to this project, feel free 
 This project is licensed under the MIT License.
 
 # 💬 Contact
-Developed ❤️ by the DELTA Team. 
+Developed ❤️ by the DELTA Team :) 
 
