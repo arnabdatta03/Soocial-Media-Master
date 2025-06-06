@@ -14,10 +14,10 @@ if uploaded_file is not None:
         if API_KEY.strip() == '':
             st.error('Enter a valid API key')
         else:
-            # Ensure the 'temp' directory exists
+            
             temp_dir = "temp"
             if not os.path.exists(temp_dir):
-                os.makedirs(temp_dir)  # Create the temp directory if it doesn't exist
+                os.makedirs(temp_dir)  
 
             file_path = os.path.join(temp_dir, uploaded_file.name)
             with open(file_path, "wb") as f:
@@ -26,7 +26,7 @@ if uploaded_file is not None:
             img = Image.open(file_path)
             try:
                 genai.configure(api_key=API_KEY)
-                # Update the model to the newer version 'gemini-1.5-flash'
+               
                 model = genai.GenerativeModel('gemini-1.5-flash')
                 caption = model.generate_content(["Write a caption for the image in english", img])
                 tags = model.generate_content(["Generate 5 hash tags for the image in a line in english", img])
@@ -40,7 +40,7 @@ if uploaded_file is not None:
                 else:
                     st.error(f"Failed to configure API due to {error_msg}")
 
-# Footer
+
 footer = """
   <style>
         a:link, a:visited {
