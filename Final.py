@@ -9,7 +9,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg
 
 API_KEY = st.text_input("Enter your API Key:  Get your Google Studio API key from [here](https://makersuite.google.com/app/apikey)", type="password")
 
-# Language selection checkboxes
+
 translate_bengali = st.checkbox("Generate Bengali Caption")
 translate_hindi = st.checkbox("Generate Hindi Caption")
 
@@ -60,7 +60,7 @@ if uploaded_file is not None:
                 else:
                     st.error(f"Failed to configure API due to {error_msg}")
 
-# Footer
+
 footer = """
   <style>
         a:link, a:visited {
